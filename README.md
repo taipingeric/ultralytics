@@ -1,3 +1,7 @@
+```bash
+pip install --upgrade git+https://github.com/taipingeric/ultralytics.git
+```
+
 <div align="center">
   <p>
     <a href="https://ultralytics.com/yolov8" target="_blank">
