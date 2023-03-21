@@ -475,7 +475,7 @@ def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
             args.append([ch[x] for x in f])
             if m is Segment:
                 args[2] = make_divisible(min(args[2], max_channels) * width, 8)
-        elif m in [CA, GAM]:
+        elif m in [GAM]:
             c1, c2 = ch[f], args[0]
             if c2 != no:  # if not outputss
                 c2 = make_divisible(c2 * gw, 8)
