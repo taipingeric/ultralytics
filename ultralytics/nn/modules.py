@@ -651,4 +651,16 @@ class CoordAtt(nn.Module):
 
         return out
 
-
+class GAMCBAM(nn.Module):
+    def __init__(self, cin, cout):
+        self.gam = GAM(cin, cout, rate=4)
+        self.cbam = CBAM(cin, kernel_size=7)
+    def forward(self, x):
+        x = self.gam(x)
+        x = self.cbam(x)
+        return x
+    
+    
+    
+    
+    
