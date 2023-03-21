@@ -1,6 +1,11 @@
 ```bash
 pip install --upgrade git+https://github.com/taipingeric/ultralytics.git
 ```
+train  : val4 0.8085782666940773
+
+train2 : val5 0.8038260203863968
+
+train3 : val6 0.8123928536010651
 
 <div align="center">
   <p>
