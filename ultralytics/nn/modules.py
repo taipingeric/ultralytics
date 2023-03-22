@@ -713,7 +713,6 @@ class BAMSpatialAttention(nn.Module):
 
     def forward(self, x) :
         res=self.sa(x)
-        print(x.shape, res.shape)
         res=res.expand_as(x)
         return res
 
