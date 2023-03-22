@@ -715,7 +715,7 @@ class BAMSpatialAttention(nn.Module):
 
 
 
-class BAMBlock(nn.Module):
+class BAM(nn.Module):
 
     def __init__(self, channel, reduction=16,dia_val=2):
         super().__init__()
